@@ -1,0 +1,38 @@
+<style type="text/css">
+    
+      
+      .paragraph1  {
+       
+       color:red;
+       text-align:center;
+       background-color:lightblue;
+       border: 1cm solid blue;
+        
+      }
+	
+      #paragraph2  {
+       
+       color:white;
+       text-align:left;
+       background-color:black;
+       border: 1cm solid red;
+       border-radius: 30px;
+        
+      }
+      .paragraph3  {
+       
+       color:#ffcc00;
+        
+      }
+	
+	a {
+   	color:blue;
+	}
+	a:visited {
+	color:green;
+	}
+	a:hover {
+	color:orange;
+	}
+    
+</style>
