@@ -47,7 +47,7 @@
                 
                 var time = (end - start) / 1000;
                 
-                document.getElementById("time").innerHTML = timeTaken + "s";
+                document.getElementById("timeTaken").innerHTML = timeTaken + "s";
                 
                 appearAfterDelay();
             }
