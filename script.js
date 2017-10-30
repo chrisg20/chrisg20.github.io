@@ -1,5 +1,5 @@
         var start = new Date().getTime();
-            
+  
             function getRandomColor() {
                 
                 var letters = "0123456789ABCDEF".split("");
@@ -14,15 +14,7 @@
             
             
             
-            function makeShapeAppear() {
-                
-                var top = Math.random() * 400;
-                
-                var left = Math.random() * 400;
-                
-                var size = Math.random() * 200 + 100;
-                
-                var color = getRandomColor();
+            function shape() {
                 
                 if (Math.random() > 0.5) {
                     
@@ -34,15 +26,7 @@
                 }
                 
                 document.getElementById("shape").style.backgroundColor = color;
-                
-                document.getElementById("shape").style.top = top + "px";
-                
-                document.getElementById("shape").style.left = left + "px";
-                
-                document.getElementById("shape").style.width = size + "px";
-                
-                document.getElementById("shape").style.height = size + "px";
-                
+             
                 document.getElementById("shape").style.display = "block";
                 
                 start = new Date().getTime();
@@ -61,9 +45,9 @@
                 
                 var end = new Date().getTime();
                 
-                var timeTaken = (end - start) / 1000;
+                var time = (end - start) / 1000;
                 
-                document.getElementById("timeTaken").innerHTML = timeTaken + "s";
+                document.getElementById("time").innerHTML = timeTaken + "s";
                 
                 appearAfterDelay();
             }
