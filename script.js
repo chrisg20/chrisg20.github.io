@@ -45,7 +45,7 @@
                 
                 var end = new Date().getTime();
                 
-                var time = (end - start) / 1000;
+                var timeTaken = (end - start) / 1000;
                 
                 document.getElementById("timeTaken").innerHTML = timeTaken + "s";
                 
