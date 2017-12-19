@@ -1,32 +1,17 @@
-window.onload = function() {
+const speed = document.querySelector('.speed');
+  const bar = speed.querySelector('.speed-bar');
+  const video = document.querySelector('.flex');
 
-  // Video
-  var video = document.getElementById("video");
-
-  // Buttons
-  var playButton = document.getElementById("play-pause");
-  var muteButton = document.getElementById("mute");
-  var fullScreenButton = document.getElementById("full-screen");
-
-  // Sliders
-  var seekBar = document.getElementById("seek-bar");
-  var volumeBar = document.getElementById("volume-bar");
-
-}
-
-// Event listener for the play/pause button
-playButton.addEventListener("click", function() {
-  if (video.paused == true) {
-    // Play the video
-    video.play();
-
-    // Update the button text to 'Pause'
-    playButton.innerHTML = "Pause";
-  } else {
-    // Pause the video
-    video.pause();
-
-    // Update the button text to 'Play'
-    playButton.innerHTML = "Play";
-  }
-});
+  function handleMove(e) {
+      const y = e.pageY - this.offsetTop;
+      const percent = y / this.offsetHeight;
+      const min = 0.4;
+      const max = 4;
+      const height = Math.round(percent * 100) + '%';
+      const playbackRate = percent * (max - min) + min;
+      bar.style.height = height;
+      bar.textContent = playbackRate.toFixed(2) + '×';
+      video.playbackRate = playbackRate;
+    console.log(percent);
+    }
+  speed.addEventListener('mousemove', handleMove);
