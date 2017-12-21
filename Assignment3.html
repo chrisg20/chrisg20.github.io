@@ -8,7 +8,7 @@
   <body>
     <p id="test"></p>
     <script> 
-      var correct = Math.floor(Math.random() * 6);
+var correct = Math.floor(Math.random() * 6);
 var guess = prompt("Enter a password between 0 and 5 inclusive.");
 var tries = 1;
       
@@ -20,7 +20,7 @@ while (guess != correct) {
          }
 
 
-if (guess == number) {
+if (guess == correct) {
       alert( guess + " is correct. It took you " + tries + " tries." );
           }
     </script>
