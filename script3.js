@@ -9,7 +9,10 @@ while (guess != correct) {
          }
       
    else {
-      alert(" + guess + ", is correct. It took you " + tries + " tries!")
+      alert(" + guess + ", is correct. It took you " + tries + " tries!");
         }
         }
-          
+            if (guesses ==1) {
+    document.getElementById("test").innerHTML = "You guessed " + number + " and it only took you " + guesses + " try";}
+    else {
+       document.getElementById("test").innerHTML = "You guessed " + number + " and it took you " + guesses + " tries";}
