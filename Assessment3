@@ -1,0 +1,35 @@
+<!doctype html>
+
+<!-- Assessment 3 -->
+
+
+
+
+<html>
+    <head>
+      
+	    <title>Assessment 3</title>
+	    
+    </head>x
+    
+    <body>
+      
+      <script>
+  
+var correct = "ilovekarl"
+var guess = prompt("Enter your password");
+
+      
+while (guess != correct) {
+       
+   guess = prompt("The password is not " + guess + ", try again.");
+         }
+         
+if (guess == correct) {
+      
+   alert("You have been logged in.");
+         }
+        </script>
+      </body>
+    
+</html>
