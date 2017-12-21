@@ -9,7 +9,7 @@ while (guess != correct) {
          }
       
    else {
-      alert(" + guess + ", is correct. It took you " + tries + " tries!");
+      alert(" + guess + ", is correct. It took you " + tries + " tries!")
         }
         }
           
